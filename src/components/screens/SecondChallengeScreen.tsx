@@ -5,8 +5,6 @@ import { ErrorComponent } from "../ErrorComponent";
 import { ResultComponentSC } from "../ResultComponentSC";
 
 
-
-
 export const SecondChallengeScreen = () => {
 
     const { state,
@@ -29,12 +27,13 @@ export const SecondChallengeScreen = () => {
                         Colocar monedas de cambio:
                     </label>
                     <input
+                        autoComplete="off"
                         type="text"
                         value={state.coin == undefined ? '' : state.coin}
                         onChange={(e) => setCoin(e.target.value)}
 
                         id="default-input"
-                        className="bg-gray-50 border  mb-5 border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border  mb-5 border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-[23rem] md:w-[30rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     />
 
                     <ErrorComponent isInvalid={state.error} />
@@ -55,7 +54,8 @@ export const SecondChallengeScreen = () => {
                     </button>
                     {
                         state.coins ? (
-                            <input type="text" id="disabled-input-2" aria-label="disabled input 2" className="bg-gray-100 border mt-4 border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value={`Tus números son: ${state.coins}`} disabled readOnly></input>
+                            <input
+                                autoComplete="off" type="text" id="disabled-input-2" aria-label="disabled input 2" className="bg-gray-100 border mt-4 border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-[23rem] md:w-[30rem] p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value={`Tus números son: ${state.coins}`} disabled readOnly></input>
                         ) : undefined
                     }
 

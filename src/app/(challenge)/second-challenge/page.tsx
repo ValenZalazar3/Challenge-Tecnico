@@ -1,9 +1,7 @@
 import { SecondChallengeScreen } from "@/components/screens/SecondChallengeScreen";
 
 
-
-
-export default function SecodChallenge() {
+export default function SecondChallenge() {
 
 
     return (
