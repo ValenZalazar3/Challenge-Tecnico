@@ -24,7 +24,7 @@ _Sigue estos pasos para tener un entorno de desarrollo ejecutándose:_
 
    ```
 
-2. Navega al root del proyecto haciendo `cd "challenge-tecnico"`
+2. Navega al root del proyecto haciendo `cd "Challenge-Tecnico"`
 3. Ejecutar `npm install` para instalar las dependencias
 4. Ejecutar `npm run dev` para levantar el proyecto en modo desarrollo
 
