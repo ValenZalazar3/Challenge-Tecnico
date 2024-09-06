@@ -20,7 +20,7 @@ export const firstChallenge = ({
 };
 
 export const validateNumberInput = (number: string) => {
-    const regex = /^-?\d+$/;
+    const regex = /^\d+$/;
     if (number === "") return;
     if (!regex.test(number)) return "Solo números";
 
