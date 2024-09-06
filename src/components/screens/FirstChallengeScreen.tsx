@@ -19,7 +19,7 @@ export default function FirstChallengeScreen() {
     return (
         <form onSubmit={handleSubmit}>
             <div className="flex flex-col justify-center items-center h-screen">
-                <h1 className="text-3xl mb-10 text-black">Challenge 1ro</h1>
+                <h1 className="text-3xl my-10 text-black">Challenge 1ro</h1>
 
 
                 <div className="mb-16">
