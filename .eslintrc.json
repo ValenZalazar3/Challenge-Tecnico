@@ -5,7 +5,9 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:testing-lubrary/react",
+    "plugin:jest-dom/recommended"
   ],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
