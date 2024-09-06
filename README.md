@@ -53,7 +53,11 @@ cd "Challenge-Tecnico"
 ```
 
 ```
-docker build -t welcome-to-docker .
+docker build -t challenge-tecnico .
+```
+
+```
+docker run -d -p 3000:3000 challenge-tecnico
 ```
 
 _Una vez ejecutados estos comandos en la aplicación de docker se creará el contenedor y una vez que lo seleccionemos Run se abrirá un modal en el seleccionaremos "Optional setting" donde colocaremos nuestro puerto por ejemplo 8089_
