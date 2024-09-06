@@ -16,6 +16,6 @@ describe("ErrorComponent", () => {
 
         // Verifica que no haya ningún mensaje de error
         const errorMessage = screen.queryByText(/error/i);
-        expect(errorMessage).toBeNull();
+        expect(errorMessage).not.toBeInTheDocument();
     });
 });

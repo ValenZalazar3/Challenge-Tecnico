@@ -3,17 +3,18 @@ import Home from "@/app/(challenge)/page";
 import '@testing-library/jest-dom'; // Importar matchers de jest-dom
 
 describe("Home Component", () => {
-    it("It should render the buttons and links", () => {
+    it("should render the buttons and links correctly", () => {
         render(<Home />);
 
 
-        const firstChallengeLink = screen.getByText(/Ir al primer reto/i);
-        const secondChallengeLink = screen.getByText(/Ir al segundo reto/i);
+        const firstChallengeLink = screen.getByRole('link', { name: /Ir al primer reto/i });
+        const secondChallengeLink = screen.getByRole('link', { name: /Ir al segundo reto/i });
+
 
         expect(firstChallengeLink).toBeInTheDocument();
-        expect(firstChallengeLink.closest('a')).toHaveAttribute('href', '/first-challenge');
+        expect(firstChallengeLink).toHaveAttribute('href', '/first-challenge');
 
         expect(secondChallengeLink).toBeInTheDocument();
-        expect(secondChallengeLink.closest('a')).toHaveAttribute('href', '/second-challenge');
+        expect(secondChallengeLink).toHaveAttribute('href', '/second-challenge');
     });
 });

@@ -6,7 +6,7 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals",
-    "plugin:testing-lubrary/react",
+    "plugin:testing-library/react",
     "plugin:jest-dom/recommended"
   ],
   "rules": {

@@ -9,7 +9,7 @@ describe("FirstChallengeScreen", () => {
         expect(screen.getByLabelText(/Colocar números distintos:/i)).toBeInTheDocument();
         expect(screen.getByLabelText(/Suma objetivo:/i)).toBeInTheDocument();
         expect(screen.getByText(/Agregar número/i)).toBeInTheDocument();
-        expect(screen.getByText(/Eliminar lista de números/i)).toBeInTheDocument();
+        expect(screen.getByText(/Eliminar números/i)).toBeInTheDocument();
         expect(screen.getByText(/Encontrar par/i)).toBeInTheDocument();
         expect(screen.getByLabelText("disabled input 2")).toHaveValue("Tu resultado se muestra aquí 😎");
     });

@@ -21,6 +21,6 @@ describe("ResultComponentSC", () => {
         render(<ResultComponentSC changeMin={0} />);
 
         const input = screen.queryByDisplayValue(/cambio mínimo/i);
-        expect(input).toBeNull();
+        expect(input).not.toBeInTheDocument();
     });
 });

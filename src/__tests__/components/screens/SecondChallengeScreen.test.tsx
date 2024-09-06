@@ -46,7 +46,7 @@ describe("SecondChallengeScreen", () => {
         fireEvent.click(screen.getByText(/Eliminar cambio/i));
 
         // Verifica que la lista de monedas esté vacía
-        expect(screen.queryByDisplayValue(/Tus números son:/i)).toBeNull();
+        expect(screen.queryByDisplayValue(/Tus números son:/i)).not.toBeInTheDocument();
     });
 
     it("should display the minimum change after submit", () => {
