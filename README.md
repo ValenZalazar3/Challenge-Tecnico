@@ -40,10 +40,6 @@ _Para realizar o ver las pruebas ejecutar el siguente comando:_
 npm run test
 ```
 
-## Despliegue (Vercel) 📦
-
-_Crea una cuenta y conecta tu GitHub a ella, ahí tedras tus proyectos (incluido este si lo clonaste y lo subiste a tu repositorio) Luego de seleccionar este repositorio Vercel ejecutara el comando correspondiente de npm run buil y ya tendras tu aplicación_
-
 ## Despliegue (DOCKER LOCAL) 📦
 
 _Para poder crear el contenedor y levantar el proyecto es necesario seguir los siguentes pasos. Abrir la aplicacion de docker y en la terminal ejecutar los siguientes comandos:_
@@ -53,7 +49,7 @@ git clone https://github.com/ValenZalazar3/Challenge-Tecnico.git
 ```
 
 ```
-cd "Callenge-Tecnico"
+cd "Challenge-Tecnico"
 ```
 
 ```
